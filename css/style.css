@@ -1,1 +1,60 @@
 /* Untuk TEST REVOU - Muhammad Safaat */
+body {
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+header {
+    text-align: center;
+}
+
+header h1 {
+    color: #0026ff;
+    background-color: #98E4FF;
+}
+
+header h4 {
+    margin-top: 32px;
+    color: #80B3FF;
+}
+
+header p {
+    margin-top: -10px;
+    font-size: small;
+    color: #00bbff;
+    margin-bottom: 15px;
+}
+
+.inputSection {
+    margin-top: 50px;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+}
+
+#squareSide {
+    margin-top: 15px;
+    outline: none;
+    border-radius: 30px;
+    border: solid #0400ff;
+    padding: 10px;
+}
+
+#squareSide:focus {
+    border: solid #6664fd;
+}
+
+button  {
+    margin-top: 5px;
+    background-color: #0400ff;
+    color: white;
+    border-radius: 150px;
+    border: solid #000000;
+    padding: 8px 15px;
+    cursor: pointer;
+}
+
+
+button:hover{
+    background-color: rgb(38, 33, 119);
+    transform: translateY(5px);
+}
