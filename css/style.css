@@ -8,8 +8,10 @@ header {
 }
 
 header h1 {
+    margin-top: 2px;
     color: #0026ff;
     background-color: #98E4FF;
+    padding: 18px 15px;
 }
 
 header h4 {
@@ -23,6 +25,22 @@ header p {
     color: #00bbff;
     margin-bottom: 15px;
 }
+
+body h4 {
+    text-align: center;
+    margin-top: 10px;
+    font-size: small;
+    color: #000000;
+    margin-bottom: 15px;
+}
+
+body h5 {
+    margin-top: 12px;
+    color: #0066ff;
+    margin-bottom:-10px;
+    flex-direction: column;
+}
+
 
 .inputSection {
     margin-top: 50px;
@@ -53,8 +71,14 @@ button  {
     cursor: pointer;
 }
 
-
 button:hover{
     background-color: rgb(38, 33, 119);
     transform: translateY(5px);
+}
+
+main {
+    margin-top: 132px;
+    border: solid #000000;
+    padding: 8px 15px;
+    cursor: pointer;
 }
