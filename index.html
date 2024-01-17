@@ -1,55 +1,58 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="css/style.css">
-    <script src="./js/script.js"></script>
-    <title>MRSAFAAT TECH MATH</title>
-    <style>table {border: 1px solid black;}</style>
-</head>
-<body>
-    <header>
-        <h1>MRSAFAAT TECH MATH WEBSITE</h1>
-        <h4>Selamat Datang di KALOL (Kalkulator Online) Perhitungan Luas dan Persegi</h4>
-        <p>Kalkulator Online Untuk Menyelesaikan Tugas Mini Project REVOU</p>
-    </header>
-    <table>
-        <tr>
-            <h3>Rumus Luas Persegi yaitu:</h3>
-            <h4 >L = S x S</h4> 
-            <h5>Dimana:</h5>
-            <h5>L = Luas</h5>
-            <h5>S = Sisi</h5>
-        </tr>
-    </table>
-    
-    <hr>
-        <div class="inputSection">
-            <label for="squareSide" id="lblSquareSide">Hitung Luas Persegi</label>
-            <input type="number" id="squareSide">
-        </div>
-        <di class="buttons">
-            <button id="yButton">Hitung</button>
-            <button id="xButton">Reset</button>
-        </di>
-</body>
-<main>
-    <tr>
-        <h3>Rumus Keliling Persegi yaitu:</h3>
-        <h4 >L = S x S</h4> 
-        <th>Dimana:</th>
-        <h5>L = Luas</h5>
-        <h5>S = Sisi</h5>
-    </tr>
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="css/style.css">
+        <script src="js/script.js" defer></script>
+        <title>MRSAFAAT TECH MATH</title>
+    </head>
+    <body>
+        <header>
+            <h1>MRSAFAAT TECH MATH WEBSITE</h1>
+            <h4>by REVOU</h4>
+            <h5>Selamat Datang di KALOL (Kalkulator Online) Perhitungan Luas dan Keliling</h5>
+        </header>
 
-    <div class="inputSection">
-        <label for="squareSide" id="lblSquareSide">Hitung Keliling Persegi</label>
-        <input type="number" id="squareSide">
-    </div>
-    <di class="buttons">
-        <button id="yButton">Hitung</button>
-        <button id="xButton">Reset</button>
-    </di>
-</main>
+        <nav>
+            <p>Pilih Menu :</p>
+            <p>
+                <button id="btnPersegi">PERSEGI</button>
+                <button id="btnPersegiPanjang">PERSEGI PANJANG</button>
+            </p>
+        </nav>
+
+        <section id="formPersegi" style="display: none;">
+            <h2>Menghitung Luas & Keliling Persegi</h2>
+            <img src="https://id-static.z-dn.net/files/d56/a76570ddbdc7567010d1444fc788f745.jpg"aalt="gambar persegi">
+            <p>Luas Persegi = S X S</p>
+            <P>Dimana S = Setiap Sisi dari Persegi</P>
+            <p><label for="sisi">Masukkan panjang sisi:</label>
+            <input type="number" id="sisi" /></p>
+            <button onclick="hitungLuasPersegi()">Hitung Luas</button>
+            <button onclick="hitungKelilingPersegi()">Hitung Keliling</button>
+            <button onclick="resetForm('formPersegi')">Reset</button>
+            <p id="hasilPersegi"></p>
+        </section>
+
+        <section id="formPersegiPanjang" style="display: none;">
+            <h2>Menghitung Luas & Keliling Persegi Panjang</h2>
+            <img src="https://blue.kumparan.com/image/upload/fl_progressive,fl_lossy,c_fill,q_auto:best,w_640/v1624507016/qtwi15urbbsypb0463v0.jpg
+            " alt="gambar persegi panjang">
+            <p>Dimana " P = Panjang " dan " L = Lebar "</p>
+            <label for="panjang">Masukkan Panjang:</label>
+            <input type="number" id="panjang" />
+            <br>
+            <br>
+            <label for="lebar">Masukkan Lebar:</label>
+            <input type="number" id="lebar" />
+            <br>
+            <br>
+            <button onclick="hitungLuasPersegiPanjang()">Hitung Luas</button>
+            <button onclick="hitungKelilingPersegiPanjang()">Hitung Keliling</button>
+            <button onclick="resetForm('formPersegiPanjang')">Reset</button>
+            <p id="hasilPersegiPanjang"></p>
+        </section>
+        <h3>Jangan Lupa "Terima Kasih" by Muhammad Safaat</h3>
+    </body>
 </html>
